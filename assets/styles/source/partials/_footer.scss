@@ -1,0 +1,136 @@
+﻿.section-dp {
+
+  position: relative;
+
+  .section-dp__load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .loader-item {
+      background-color: transparent;
+      display: block !important;
+    }
+  }
+
+  .container {
+    position: relative;
+
+    &.absolute {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: 0;
+
+      @include breakpoint( elephant ) {
+        left: 50%;
+        margin-left: -600px;
+      }
+    }
+  }
+
+  .section-dp__figure {
+    display: inline-block;
+  }
+
+  .section-dp__figure-img {
+    position: relative;
+  }
+
+  .img-responsive {
+    margin: 0 auto;
+    max-height: 685px;
+  }   
+
+  .header-cover-top {
+    top: 0;
+    left: 0;
+  }
+
+  .header-cover-bottom {
+    bottom: 0;
+    left: 0;
+  }
+
+  .section-dp__bt-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -38px;
+    margin-left: -47.5px;
+  }
+
+  .section-dp__logo {
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+
+  .section-dp__info {
+
+    .title {
+      margin: 0;
+      @extend .fonte-miloot-m;
+      font-size: em(38);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    .subtitle {
+      margin: 0;
+      @extend .fonte-miloot;
+      font-size: em(22);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+    
+    .slogan {
+      font-size: em(16);
+    }
+  }
+
+  .section-dp__legenda {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    max-width: 400px;
+
+    padding: 10px;
+    background-color: $color_blue_dark;
+
+    .section-dp__legenda-title {
+      @extend .fonte-ultra;
+      font-size: em(30);
+      color: $color_white;
+      text-transform: uppercase;
+    }
+  }
+
+  .s--icon-scroll-down {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+
+    @include breakpoint( elephant ) {
+      right: 0;
+    }
+  }
+
+  #video-controls {
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    .fa {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      opacity: 0;
+    }
+  }
+
+}

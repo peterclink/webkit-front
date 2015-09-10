@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'NexaBold';
+    src: url('../../fonts/Nexa-Bold.eot');
+    src: url('../../fonts/Nexa-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/Nexa-Bold.woff') format('woff'),
+         url('../../fonts/Nexa-Bold.ttf') format('truetype'),
+         url('../../fonts/Nexa-Bold.svg#NexaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('../../fonts/Nexa-Light.eot');
+    src: url('../../fonts/Nexa-Light.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/Nexa-Light.woff') format('woff'),
+         url('../../fonts/Nexa-Light.ttf') format('truetype'),
+         url('../../fonts/Nexa-Light.svg#NexaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'miloot';
+  src: url('../../fonts/miloot.eot');
+  src: url('../../fonts/miloot.eot') format('embedded-opentype'),
+       url('../../fonts/miloot.woff') format('woff'),
+       url('../../fonts/miloot.ttf') format('truetype'),
+       url('../../fonts/miloot.svg#miloot') format('svg');
+}
+
+@font-face {
+  font-family: 'miloot-light';
+  src: url('../../fonts/miloot-light.eot');
+  src: url('../../fonts/miloot-light.eot') format('embedded-opentype'),
+       url('../../fonts/miloot-light.woff') format('woff'),
+       url('../../fonts/miloot-light.ttf') format('truetype'),
+       url('../../fonts/miloot-light.svg#miloot-light') format('svg');
+}
+
+@font-face {
+  font-family: 'miloot-lightita';
+  src: url('../../fonts/miloot-lightita.eot');
+  src: url('../../fonts/miloot-lightita.eot') format('embedded-opentype'),
+       url('../../fonts/miloot-lightita.woff') format('woff'),
+       url('../../fonts/miloot-lightita.ttf') format('truetype'),
+       url('../../fonts/miloot-lightita.svg#miloot-lightita') format('svg');
+}
+
+@font-face {
+  font-family: 'miloot-bold';
+  src: url('../../fonts/miloot-bold.eot');
+  src: url('../../fonts/miloot-bold.eot') format('embedded-opentype'),
+       url('../../fonts/miloot-bold.woff') format('woff'),
+       url('../../fonts/miloot-bold.ttf') format('truetype'),
+       url('../../fonts/miloot-bold.svg#miloot-bold') format('svg');
+}
+
+@font-face {
+  font-family: 'miloot-exlig';
+  src: url('../../fonts/miloot-exlig.eot');
+  src: url('../../fonts/miloot-exlig.eot') format('embedded-opentype'),
+       url('../../fonts/miloot-exlig.woff') format('woff'),
+       url('../../fonts/miloot-exlig.ttf') format('truetype'),
+       url('../../fonts/miloot-exlig.svg#miloot-exlig') format('svg');
+}
+
+@font-face {
+  font-family: 'miloot-medi';
+  src: url('../../fonts/miloot-medi.eot');
+  src: url('../../fonts/miloot-medi.eot') format('embedded-opentype'),
+       url('../../fonts/miloot-medi.woff') format('woff'),
+       url('../../fonts/miloot-medi.ttf') format('truetype'),
+       url('../../fonts/miloot-medi.svg#miloot-medi') format('svg');
+}
+
+@font-face {
+  font-family: 'ultracondensedsansserif';
+  src: url('../../fonts/ultracondensedsansserif.eot');
+  src: url('../../fonts/ultracondensedsansserif.eot') format('embedded-opentype'),
+       url('../../fonts/ultracondensedsansserif.woff') format('woff'),
+       url('../../fonts/ultracondensedsansserif.ttf') format('truetype'),
+       url('../../fonts/ultracondensedsansserif.svg#ultracondensedsansserif') format('svg');
+}
+
+// Normal
+.fonte-gs {
+    font-family: 'Gillsans', 'Trebuchet MS', Arial, sans-serif;
+}
+
+// Light
+.fonte-gs-l {
+    font-family: 'Gillsans Light', 'Trebuchet MS', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+// Bold
+.fonte-gs-b {
+    font-family: 'GillsansBold', 'Trebuchet MS', Arial, sans-serif;
+}
+
+// Italico
+.fonte-gs-i {
+    font-family: 'GillsansItalic', 'Trebuchet MS', Arial, sans-serif;
+}
+
+.fonte-NexaBold {
+	font-family: 'NexaBold', 'Trebuchet MS', Arial, sans-serif;
+}
+
+.fonte-NexaLight {
+	font-family: 'NexaLight', 'Trebuchet MS', Arial, sans-serif;
+}
+
+.fonte-miloot {
+  font-family: 'miloot', 'Trebuchet MS', Arial, sans-serif;
+   -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.fonte-miloot-l {
+  font-family: 'miloot', 'Trebuchet MS', Arial, sans-serif;
+   -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.fonte-miloot-l-i {
+  font-family: 'miloot-lightita', 'Trebuchet MS', Arial, sans-serif;
+   -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.fonte-miloot-ex-l {
+  font-family: 'miloot-exlig', 'Trebuchet MS', Arial, sans-serif;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.fonte-miloot-b {
+  font-family: 'miloot-bold', 'Trebuchet MS', Arial, sans-serif;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.fonte-miloot-m {
+  font-family: 'miloot-medi', 'Trebuchet MS', Arial, sans-serif;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.fonte-ultra {
+  font-family: 'ultracondensedsansserif', 'Trebuchet MS', Arial, sans-serif;
+}

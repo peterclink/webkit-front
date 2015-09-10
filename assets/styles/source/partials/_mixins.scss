@@ -1,0 +1,156 @@
+// Media Queries
+@mixin breakpoint( $breakpoint ) {
+	@if $breakpoint == mouse {
+		@media only screen and (min-width: em(480)) { @content; }
+	}
+
+	@else if $breakpoint == dog {
+		@media only screen and (min-width: em(768)) { @content; }
+	}
+
+	@else if $breakpoint == tiger {
+		@media only screen and (min-width: em(960)) { @content; }
+	}
+
+	@else if $breakpoint == horse {
+		@media only screen and (min-width: em(1024)) { @content; }
+	}
+
+	@else if $breakpoint == elephant {
+		@media only screen and (min-width: em(1280)) { @content; }
+	}
+
+	@else if $breakpoint == hippo {
+		@media only screen and (min-width: em(1366)) { @content; }
+	}
+
+	@else if $breakpoint == whale {
+		@media only screen and (min-width: em(1440)) { @content; }
+	}
+
+	@else if $breakpoint == dragon {
+		@media only screen and (min-width: em(1650)) { @content; }
+	}
+
+	@else if $breakpoint == dinossaur {
+		@media only screen and (min-width: em(1920)) { @content; }
+	}
+
+	@else if $breakpoint == chameleon {
+		@media print, ( -o-min-device-pixel-ratio: 5/4 ), ( -webkit-min-device-pixel-ratio: 1.25 ), ( min-resolution: 120dpi ) { @content; }
+	}
+
+	@else {
+		@media only screen and (min-width: $breakpoint) { @content; }
+	}
+}
+
+
+/* ------- FONTES - uso: @include font-size(14px); ------- */
+@mixin font-size($target, $context: 16px) {
+    font-size: $target;
+    font-size: rem($target,$context);
+}
+
+
+
+/* ------- CLEARFIX - uso: @include clearfix; ------- */
+@mixin clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+
+
+/* ------- CHECK HOVER - uso : @include checkHover { parametros: valores; } ------- */
+@mixin checkHover {
+	.no-touch &,
+	.no-js & {
+		@content;
+	}
+}
+
+
+// Image Replacement
+@mixin ir {
+	*text-indent: -9999px;
+	border: 0;
+	background-color: transparent;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 150%;
+	}
+}
+
+@mixin transition {
+	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+@mixin imageFlip {
+	-webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+	-moz-transform: rotate(180deg);        /* FF */
+	-o-transform: rotate(180deg);          /* Opera */
+	-ms-transform: rotate(180deg);         /* IE9 */
+	transform: rotate(180deg);             /* W3C compliant browsers */
+
+	/* IE8 and below */
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=-1, DX=0, DY=0, SizingMethod='auto expand');
+}
+
+/* ------- opacity - uso : @include opacity(0.5) ------- */
+@mixin opacity( $opacity ) {
+  $ie: $opacity * 100;
+
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($ie)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=($ie));
+
+  /* Netscape */
+  -moz-opacity: $opacity;
+
+  /* Safari 1.x */
+  -khtml-opacity: $opacity;
+
+  /* Good browsers */
+  opacity: $opacity;
+}
+
+@mixin box-sizing( $border-box ) {
+	
+	-webkit-box-sizing: $border-box;
+	-moz-box-sizing: $border-box;
+	box-sizing: $border-box;
+
+    &:before,
+    &.after {
+		-webkit-box-sizing: $border-box;
+		-moz-box-sizing: $border-box;
+		box-sizing: $border-box;
+	}
+}
+
+@mixin boxShadow ($value) {
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	box-shadow: $value;
+}
+
+@mixin borderRadius($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}

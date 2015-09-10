@@ -1,0 +1,126 @@
+*,
+:before,
+:after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'miloot', helvetica, sans-serif;
+	-moz-font-feature-settings: "lnum";
+	-webkit-font-feature-settings: "lnum";
+	font-feature-settings: "lnum";
+	color: $color_black;
+}
+
+body {
+	font-family: 'miloot', helvetica, sans-serif;
+	-moz-font-feature-settings: "lnum";
+	-webkit-font-feature-settings: "lnum";
+	font-feature-settings: "lnum";
+	background: #f3f1ee;
+}
+
+// Links
+a {
+	color: $color_black;
+}
+a:hover {
+	color: $color_gray;
+}
+
+
+// Images
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+
+p {
+	margin: 0 0 1.45em;
+}
+
+blockquote {
+	margin: 0 1.45em;
+}
+
+address {
+	margin: 0 0 1.45em;
+}
+
+span {
+	line-height: initial;
+}
+
+figure {
+	margin: 0;
+}
+
+.text-white {
+	color: $color_white;
+}
+
+.fixed {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&.fixed-right {
+		left: auto;
+		right: 0;
+	}
+}
+
+.ajaxLoader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, .7);
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+
+  @include transition;
+
+  .loader-item {
+    position: fixed;
+    display: block !important;
+    background-color: transparent;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+.left-pad-5 {
+	padding-left: 5px;
+}
+
+.right-pad-5 {
+	padding-right: 5px;
+}
+
+body > #page {
+	max-width: 1920px;
+	margin: 0 auto;
+}

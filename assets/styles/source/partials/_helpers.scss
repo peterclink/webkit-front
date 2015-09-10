@@ -1,0 +1,18 @@
+/* ------- FONTES - REM ------- */
+@function rem( $target, $context: 16px ) {
+	@return ( $target / $context ) * 1rem;
+}
+
+
+
+/* ------- FONTES - EM ------- */
+@function em( $target, $context: 16 ) {
+	@return ( $target / $context ) * 1em;
+}
+
+
+
+/* ------- COLUNAS ------- */
+@function column( $number, $total: 12 ) {
+	@return ( 100% * $number ) / $total;
+}
