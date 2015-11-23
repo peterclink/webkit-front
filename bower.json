@@ -1,8 +1,8 @@
 {
-  "name": "Multibeneficios",
-  "version": "0.1.0",
+  "name": "Webkit Front",
+  "version": "1.0",
   "authors": [
-    "Mirum <mirum.tecbr@mirumagency.com>"
+    "Peter Link <petercal89@gmail.com>"
   ],
   "homepage": "",
   "ignore": [
@@ -14,10 +14,10 @@
     "tests"
   ],
   "devDependencies": {
-    "modernizr": "~2.8.3",
+    "modernizr": "~3.2.0",
     "jquery-1.11.2.min": "http://code.jquery.com/jquery-1.11.2.min.js",
     "jquery-validate": "~1.14.0",
     "jquery-placeholder": "~2.1.1",
-    "dw-bxslider-4": "~4.2.5"
+    "jquery-mask-plugin": "jQuery-Mask-Plugin#~1.13.4"
   }
 }

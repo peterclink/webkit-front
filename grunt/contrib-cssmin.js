@@ -6,9 +6,9 @@ module.exports = function(grunt) {
 		},
 		site: {
 			expand: true,
-			cwd: 'assets/styles',
+			cwd: 'dist/styles',
 			src: ['*.css', '!*.min.css'],
-			dest: 'assets/styles',
+			dest: 'dist/styles',
 			ext: '.min.css'
 		}
 	});

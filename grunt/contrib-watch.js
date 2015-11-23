@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	
 	grunt.config('watch', {
 		sass: {
-			files: ['assets/styles/source/**/*.{scss,sass}'],
+			files: ['source/styles/**/*.{scss,sass}'],
 			tasks: ['sass', 'autoprefixer', 'cssmin']
 		},
 		js: {
@@ -10,12 +10,12 @@ module.exports = function(grunt) {
 			tasks: ['jshint', 'uglify']
 		},
 		images: {
-			files: ['assets/images/**/*.{png,jpg,gif}'],
+			files: ['dist/images/**/*.{png,jpg,gif}'],
 			tasks: ['imagemin']
 		},
 		livereload: {
 			options: { livereload: true },
-			files: ['**/*.{html,php}', 'assets/styles/geral.css', 'assets/scripts/*.js', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
+			files: ['**/*.{html,php}', 'dist/styles/geral.css', 'dist/scripts/*.js', 'dist/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
 		}
 	});
 	

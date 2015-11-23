@@ -1,0 +1,57 @@
+/*
+  --------------
+    VARIÁVEIS
+  --------------
+
+  Arquivo específico para definição de constantes e variáveis.
+*/
+
+
+
+/* ------- PALETA DE CORES ------- */
+$cor_textos: #787878; // textos de conteúdo
+$cor_body: #fff; // cor do fundo do site
+
+$cor_branco: #fff;
+
+$cor_preto: #000;
+
+$cor_cinza: #757575;
+$cor_cinza-escuro: #333333;
+$cor_cinza--bkg: #505150;
+$cor_cinza-claro--bkg: #f0f0f0;
+$cor_cinza-claro2--bkg: #cdcecd;
+$cor_cinza-claro3--bkg: #a7a7a7;
+$cor_cinza-escuro--bkg: #444444;
+$cor_cinza-escuro2--bkg: #4c4c4c;
+$cor_cinza--link: #818181;
+$cor_cinza--titulo: #7b7b7b;
+$cor_cinza--map: #565656;
+
+$cor_laranja: #f05a29;
+$cor_laranja--hover: #d95226;
+
+$cor_vermelho: #ef4840;
+$cor_vermelho--erro: #f02940;
+
+$cor_azul: #0f6cb6;
+$cor_azul-claro: #467cbf;
+
+$cor_marrom: #6d5a58;
+$cor_bege: #decba7;
+
+$cor_verde: #109547;
+$cor_verde--bkg: #0e8e38;
+
+/* --- cores para prismas - slides cartões --- */
+$prisma_vermelho: #cd1e18;
+$prisma_cinza: #9ea0a3;
+$prisma_verde: #319153;
+$prisma_azul: #306eaf;
+$prisma_azulclaro: #527bb9;
+
+
+/* ------- MEDIDAS ------- */
+$largura_max: 1220px;
+$largura_max-pequeno: 860px;
+$padding: 20px;

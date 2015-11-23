@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 		},
 		all: [
 			'Gruntfile.js',
-			'assets/scripts/source/*.js'
+			'source/scripts/*.js'
 		]
 	});
 	

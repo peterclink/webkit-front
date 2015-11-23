@@ -1,0 +1,23 @@
+.desktop {
+	display: none;
+
+	@include breakpoint( horse ) {
+		display: block;
+	}
+}
+
+.tablet {
+	display: none;
+
+	@include breakpoint( dog ) {
+		display: block;
+	}
+}
+
+.mobile {
+	display: block;
+
+	@include breakpoint( dog ) {
+		display: none;
+	}
+}

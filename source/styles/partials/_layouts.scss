@@ -1,0 +1,22 @@
+/*
+  --------------
+  FOOTER
+  --------------
+
+  Arquivo destinado para blocos padronizáveis de todo site como: Titulos, formatações de texto, grids e links, por exemplo.
+*/
+
+
+
+/* ------- PADRÕES ------- */
+.html {
+	@include font-lato;
+	background-color: $cor_body;
+	color: $cor_textos;
+}
+
+.body {
+	margin: 0;
+	padding: 0;
+	@include font-size(14px);
+}

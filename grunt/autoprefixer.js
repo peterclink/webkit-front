@@ -8,8 +8,8 @@ module.exports = function(grunt) {
 		files: {
 			expand: true,
 			flatten: true,
-			src: 'assets/styles/*.css',
-			dest: 'assets/styles'
+			src: 'dist/styles/*.css',
+			dest: 'dist/styles'
 		}
 	});
 	

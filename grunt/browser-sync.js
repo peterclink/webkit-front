@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	
 	grunt.config('browserSync', {
 		bsFiles: {
-			src: 'assets/styles/**.css'
+			src: 'dist/styles/**.css'
 		},
 		options: {
 			watchTask: true,
